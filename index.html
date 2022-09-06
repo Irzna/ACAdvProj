@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Posts</title>
 </head>
 
 <body>
-    <h1>Posts</h1>
+    <header>
+        <div>
+            <h1>Posts from https://jsonplaceholder.typicode.com/posts</h1>
+        </div>
 
-    <button id="postsGetButton">Get Posts</button>
-    <input type="number" id="filter-input">
+</header>
 
+ <main>
+    <div class="url-style">
+        <!-- <label for="url-input">Enter your post address</label>    <br> -->
+    <!-- <div> -->
+        <!-- <input type="url" id="url-input" placeholder="Input your post address... " > -->
+        <button id="postsGetButton"><b>Get Posts</b> </button>
+    <!-- </div> -->
+    </div>
+    <div class="filter-style">
+        <!-- <label for="filter-input" >Filter</label> -->
+        <input type="number" id="filter-input" placeholder="Filter by user Id... " >
+        <button id="filter-text"><b>Submit</b></button>
+    </div>
+ </main> 
+ <hr>
+ <article>
+    <div id="load" hidden>Loading...</div>
     <ul id="posts"></ul>
+        <!-- <div id="load">Loading...</div> -->
 
+ </article>
+   
 </body>
 <script src="./script.js"></script>
+<!-- <script src="./main.js"></script> -->
 
 </html>
